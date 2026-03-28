@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>실습 2-5</title>
+  <meta charset="UTF-8">
+  <title>실습 2-5</title>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid darkgray;
+      width: 600px;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid darkgray;
+      padding: 20px;
+      text-align: center;
+    }
+
+    thead th {
+      background-color: skyblue;
+    }
+
+    tbody th {
+      background-color: skyblue;
+    }
+
+    .bg-img {
+      background-image: url('https://img.freepik.com/free-photo/cherry-tree-flowers-ai-generated_268835-11258.jpg');
+      background-size: cover;
+      color: black;
+      font-weight: bold;
+    }
+
+    caption {
+      caption-side: bottom;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+
 </head>
+
 <body>
-  <table border="1">
+
+  <table>
     <caption>2023 국민 독서실태</caption>
+
     <thead>
       <tr>
         <th>구분</th>
@@ -14,11 +55,12 @@
         <th>독서자</th>
       </tr>
     </thead>
+
     <tbody>
       <tr>
         <th>종이책</th>
         <td>6.1권</td>
-        <td>11.8권</td>
+        <td class="bg-img">11.8권</td> 
       </tr>
       <tr>
         <th>전자책</th>
@@ -31,6 +73,8 @@
         <td>5.5권</td>
       </tr>      
     </tbody>
+
   </table>
+
 </body>
 </html>
